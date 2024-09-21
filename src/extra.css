@@ -18,3 +18,39 @@ html {
 .custom-shape-divider-top-1726891569 .shape-fill {
   fill: white;
 }
+
+/* next curve  */
+.custom-shape-divider-top-1726904941 {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1726904941 svg {
+  position: relative;
+  display: block;
+  width: calc(143% + 1.3px);
+  height: 257px;
+}
+
+.custom-shape-divider-top-1726904941 .shape-fill {
+  fill: rgb(251, 146, 60);
+}
+
+/* next next curve  */
+.custom-shape-divider-bottom-1726907540 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1726907540 svg {
+  position: relative;
+  display: block;
+  width: calc(141% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-bottom-1726907540 .shape-fill {
+  fill: rgb(31, 41, 55);
+}

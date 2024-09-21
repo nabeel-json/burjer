@@ -26,15 +26,16 @@
         src="./src/assets/icon.svg"
         alt="LOGO"
       />
-      <span class="flex items-center gap-10">
+      <span class="flex items-center justify-center gap-6">
         <a href="#cart-section" class="hidden text-lg sm:inline-block"
           ><i class="fa-solid fa-cart-shopping"></i> Cart</a
         >
-        <button
-          class="hidden rounded-sm bg-orange-400 px-3 py-2 transition-colors hover:bg-orange-500 sm:inline-block"
-        >
-          Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </button>
+        <a
+          href="https://github.com/nabeel-json/burjer"
+          target="_blank"
+          class="hidden text-lg sm:inline-block"
+          >Code <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
       </span>
       <span
         id="menu-icon"
@@ -48,10 +49,19 @@
       <div
         class="fixed top-16 z-20 flex w-full flex-col items-center justify-center gap-6 border-b-2 bg-white p-14"
       >
-        <a href="#cart-section" class="text-lg"
+        <a
+          id="phone-cart-btn"
+          onclick="menuClick()"
+          href="#cart-section"
+          class="text-lg"
           ><i class="fa-solid fa-cart-shopping"></i> Cart</a
         >
-        <a href="" target="_blank" class="text-lg"
+        <a
+          id="phone-code-btn"
+          onclick="menuClick()"
+          href="https://github.com/nabeel-json/burjer"
+          target="_blank"
+          class="text-lg"
           >Code <i class="fa-solid fa-arrow-up-right-from-square"></i
         ></a>
       </div>
@@ -136,8 +146,8 @@
         </div>
         <!-- counter end -->
         <a
-        href="#cart-section"
-          class="text-center rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
+          href="#cart-section"
+          class="rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 text-center transition-colors hover:bg-orange-400"
         >
           View Cart
         </a>
@@ -177,8 +187,8 @@
         </div>
         <!-- counter end -->
         <a
-        href="#cart-section"
-          class="text-center rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
+          href="#cart-section"
+          class="rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 text-center transition-colors hover:bg-orange-400"
         >
           View Cart
         </a>
@@ -217,17 +227,36 @@
         </div>
         <!-- counter end -->
         <a
-        href="#cart-section"
-          class="text-center rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
+          href="#cart-section"
+          class="rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 text-center transition-colors hover:bg-orange-400"
         >
           View Cart
         </a>
       </div>
       <!-- card end -->
     </section>
-    <section id="cart-section" class="flex justify-evenly items-center px-10 py-10 flex-wrap">
-      <div id="cart-container" class="mt-10 flex flex-col gap-5 text-xl">
-        <h1 class="text-4xl font-bold mb-3">
+    <!-- cart start  -->
+    <!-- curve -->
+    <div class="custom-shape-divider-top-1726904941">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+    <!-- curve end -->
+    <section
+      id="cart-section"
+      class="flex flex-wrap items-center justify-evenly px-10 pb-10"
+    >
+      <div id="cart-container" class="flex flex-col gap-5 text-xl">
+        <h1 class="mb-3 text-4xl font-bold">
           Cart <i class="fa-solid fa-cart-shopping"></i>
         </h1>
         <h1>
@@ -244,16 +273,140 @@
         </h1>
         <span class="mt-6 text-lg">
           <a
+          href="#checkout-section"
             id="checkout-button"
-            href="#"
             class="rounded-sm bg-orange-400 px-3 py-2 transition-colors hover:bg-orange-500"
           >
             Proceed to Checkout: $<span id="checkout-num">0</span> 💳
           </a>
         </span>
       </div>
-      <img class="w-[400px]" src="./src/assets/checkout.gif" draggable="false" alt="CHECKOUT">
+      <img
+        class="w-[400px]"
+        src="./src/assets/checkout.gif"
+        draggable="false"
+        alt="CHECKOUT"
+      />
     </section>
+    <!-- cart end  -->
+    <!-- curve start  -->
+    <div class="custom-shape-divider-bottom-1726907540">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+    <!-- curve end  -->
+    <!-- checkout start  -->
+    <section id="checkout-section" class="bg-slate-800 px-10 py-20 text-white">
+      <div class="mb-10 text-center">
+        <h1 class="mb-3 text-4xl font-bold">Checkout 💳</h1>
+      </div>
+      <form class="mx-auto mb-10 max-w-md">
+        <div class="group relative z-0 mb-5 w-full">
+          <input
+            type="email"
+            name="floating_email"
+            id="floating_email"
+            class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-orange-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_email"
+            class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-orange-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400"
+            >Email address</label
+          >
+        </div>
+        <div class="group relative z-0 mb-5 w-full">
+          <input
+            type="text"
+            name="floating_password"
+            id="floating_password"
+            class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-orange-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_password"
+            class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-orange-600 rtl:peer-focus:translate-x-1/4 dark:text-gray-400"
+            >Delivery Address</label
+          >
+        </div>
+
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="group relative z-0 mb-5 w-full">
+            <input
+              type="text"
+              name="floating_first_name"
+              id="floating_first_name"
+              class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-orange-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_first_name"
+              class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-orange-600 rtl:peer-focus:translate-x-1/4 dark:text-gray-400"
+              >First name</label
+            >
+          </div>
+          <div class="group relative z-0 mb-5 w-full">
+            <input
+              type="text"
+              name="floating_last_name"
+              id="floating_last_name"
+              class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-orange-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_last_name"
+              class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-orange-600 rtl:peer-focus:translate-x-1/4 dark:text-gray-400"
+              >Last name</label
+            >
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="group relative z-0 mb-5 w-full">
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              name="floating_phone"
+              id="floating_phone"
+              class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-orange-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_phone"
+              class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-orange-600 rtl:peer-focus:translate-x-1/4 dark:text-gray-400"
+              >Phone number (+92)</label
+            >
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="w-full rounded-sm bg-orange-500 px-5 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-orange-400 focus:outline-none sm:w-auto"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <!-- checkout end  -->
+    <!-- footer start  -->
+    <footer
+      class="flex items-center justify-center bg-orange-500 py-4 text-gray-800"
+    >
+      © 2024 Burjer Co. All rights reserved.
+    </footer>
+    <!-- footer end  -->
     <script src="./src/index.js"></script>
   </body>
 </html>

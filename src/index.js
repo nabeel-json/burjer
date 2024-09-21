@@ -54,3 +54,9 @@ function updateCheckoutTotal() {
 
   document.getElementById("checkout-num").innerHTML = total; // Update checkout display
 }
+
+//checkout form
+document.getElementById("checkout-button").addEventListener("click", function () {
+  const form = document.getElementById("floatingForm");
+  form.classList.toggle("hidden");
+});
