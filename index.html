@@ -13,9 +13,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Burjer</title>
   </head>
-  <body>
+  <body class="font-Poppins">
     <!-- navbar -->
     <nav
       class="fixed z-10 flex h-16 w-full items-center justify-between border-b-2 bg-white px-10"
@@ -70,7 +77,7 @@
 
     <main class="flex flex-wrap items-center justify-center gap-20 px-5 pt-28">
       <span class="">
-        <h1 class="text-4xl font-bold">
+        <h1 class="text-4xl font-bold font-Oswald">
           Get your Tasty Burgers at
           <span class="text-orange-500 underline">Burjer!</span>
         </h1>
@@ -80,7 +87,7 @@
         </h2>
         <a
           href="#menu-section"
-          class="mt-4 inline-block rounded-sm bg-orange-400 px-3 py-2 transition-colors hover:bg-orange-500"
+          class="mt-4 inline-block rounded-sm bg-orange-400 px-3 py-2 transition-colors font-SofadiOne hover:bg-orange-500"
         >
           Order Now 🔥
         </a>
@@ -94,7 +101,7 @@
     </main>
     <section
       id="menu-section"
-      class="mt-10 flex flex-wrap items-center justify-center gap-10 bg-orange-400 pb-14"
+      class="mt-10 flex flex-wrap items-center justify-center gap-10 bg-orange-400 pb-14 font-Oswald"
     >
       <!-- curve -->
       <div class="custom-shape-divider-top-1726891569">
@@ -253,7 +260,7 @@
     <!-- curve end -->
     <section
       id="cart-section"
-      class="flex flex-wrap items-center justify-evenly px-10 pb-10"
+      class="flex flex-wrap items-center justify-evenly px-10 pb-10 font-SofadiOne"
     >
       <div id="cart-container" class="flex flex-col gap-5 text-xl">
         <h1 class="mb-3 text-4xl font-bold">
@@ -273,7 +280,7 @@
         </h1>
         <span class="mt-6 text-lg">
           <a
-          href="#checkout-section"
+            href="#checkout-section"
             id="checkout-button"
             class="rounded-sm bg-orange-400 px-3 py-2 transition-colors hover:bg-orange-500"
           >
@@ -402,7 +409,7 @@
     <!-- checkout end  -->
     <!-- footer start  -->
     <footer
-      class="flex items-center justify-center bg-orange-500 py-4 text-gray-800"
+      class="flex items-center justify-center bg-orange-500 py-4 text-gray-800 font-mono"
     >
       © 2024 Burjer Co. All rights reserved.
     </footer>
