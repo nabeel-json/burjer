@@ -27,7 +27,7 @@
         alt="LOGO"
       />
       <span class="flex items-center gap-10">
-        <a href="" class="hidden text-lg sm:inline-block"
+        <a href="#cart-section" class="hidden text-lg sm:inline-block"
           ><i class="fa-solid fa-cart-shopping"></i> Cart</a
         >
         <button
@@ -46,12 +46,12 @@
     <!-- phone-menu -->
     <div id="phone-menu" class="hidden sm:hidden">
       <div
-        class="fixed top-16 z-20 flex w-full flex-col items-center justify-center gap-6 border-b-2 bg-orange-500 p-14"
+        class="fixed top-16 z-20 flex w-full flex-col items-center justify-center gap-6 border-b-2 bg-white p-14"
       >
-        <a href="" class="text-lg"
+        <a href="#cart-section" class="text-lg"
           ><i class="fa-solid fa-cart-shopping"></i> Cart</a
         >
-        <a href="" class="text-lg"
+        <a href="" target="_blank" class="text-lg"
           >Code <i class="fa-solid fa-arrow-up-right-from-square"></i
         ></a>
       </div>
@@ -60,7 +60,10 @@
 
     <main class="flex flex-wrap items-center justify-center gap-20 px-5 pt-28">
       <span class="">
-        <h1 class="text-4xl font-bold">Get your Tasty Burgers at <span class="underline text-orange-500">Burjer!</span></h1>
+        <h1 class="text-4xl font-bold">
+          Get your Tasty Burgers at
+          <span class="text-orange-500 underline">Burjer!</span>
+        </h1>
         <h2 class="mt-4 text-slate-800">
           Crafted with fresh ingredients, cooked to perfection, and delivered
           hot!
@@ -69,13 +72,13 @@
           href="#menu-section"
           class="mt-4 inline-block rounded-sm bg-orange-400 px-3 py-2 transition-colors hover:bg-orange-500"
         >
-          Order Now <i class="fa-solid fa-arrow-down"></i>
+          Order Now 🔥
         </a>
       </span>
       <img
         draggable="false"
         id="hero-burger"
-        src="./src/assets/heroburger.png"
+        src="./src/assets/heroburger1.png"
         alt="Burger"
       />
     </main>
@@ -108,11 +111,11 @@
           class=""
           alt="Burger"
         />
-
-        <span class="px-4">
+        <span class="flex flex-col gap-2 px-4">
           <h1 class="text-2xl font-bold text-orange-500">
             Burger + Fries Combo
           </h1>
+          <span class="text-xl font-bold text-green-500">$20</span>
           <p class="text-gray-600">
             Our best burger yet, served with a side of tasty, fresh fries.
           </p>
@@ -132,11 +135,12 @@
           </button>
         </div>
         <!-- counter end -->
-        <button
-          class="rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
+        <a
+        href="#cart-section"
+          class="text-center rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
         >
           View Cart
-        </button>
+        </a>
       </div>
       <!-- card end -->
       <!-- card start -->
@@ -149,9 +153,9 @@
           class=""
           alt="Burger"
         />
-
-        <span class="px-4">
+        <span class="flex flex-col gap-2 px-4">
           <h1 class="text-2xl font-bold text-orange-500">Veggie Burger</h1>
+          <span class="text-xl font-bold text-green-500">$12</span>
           <p class="text-gray-600">
             Veggie burger for our vegetarian customers, complete with a veggie
             patty and vegetables.
@@ -172,11 +176,12 @@
           </button>
         </div>
         <!-- counter end -->
-        <button
-          class="rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
+        <a
+        href="#cart-section"
+          class="text-center rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
         >
           View Cart
-        </button>
+        </a>
       </div>
       <!-- card end -->
       <!-- card start -->
@@ -189,11 +194,9 @@
           class=""
           alt="Burger"
         />
-
-        <span class="px-4">
-          <h1 class="text-2xl font-bold text-orange-500">
-            Burger + Egg
-          </h1>
+        <span class="flex flex-col gap-2 px-4">
+          <h1 class="text-2xl font-bold text-orange-500">Burger + Egg</h1>
+          <span class="text-xl font-bold text-green-500">$16</span>
           <p class="text-gray-600">
             Our famous egg burger, served with our famous mint sauce.
           </p>
@@ -213,16 +216,43 @@
           </button>
         </div>
         <!-- counter end -->
-        <button
-          class="rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
+        <a
+        href="#cart-section"
+          class="text-center rounded-sm rounded-b-xl border-[2px] border-black bg-orange-500 px-3 py-2 transition-colors hover:bg-orange-400"
         >
           View Cart
-        </button>
+        </a>
       </div>
       <!-- card end -->
     </section>
-    <section id="cart" class="h-96">
-
+    <section id="cart-section" class="flex justify-evenly items-center px-10 py-10 flex-wrap">
+      <div id="cart-container" class="mt-10 flex flex-col gap-5 text-xl">
+        <h1 class="text-4xl font-bold mb-3">
+          Cart <i class="fa-solid fa-cart-shopping"></i>
+        </h1>
+        <h1>
+          <span id="one" class="count font-bold text-orange-500">0</span> x
+          Burger + Fries Combo
+        </h1>
+        <h1>
+          <span id="two" class="count font-bold text-orange-500">0</span> x
+          Veggie Burger
+        </h1>
+        <h1>
+          <span id="three" class="count font-bold text-orange-500">0</span> x
+          Burger + Egg
+        </h1>
+        <span class="mt-6 text-lg">
+          <a
+            id="checkout-button"
+            href="#"
+            class="rounded-sm bg-orange-400 px-3 py-2 transition-colors hover:bg-orange-500"
+          >
+            Proceed to Checkout: $<span id="checkout-num">0</span> 💳
+          </a>
+        </span>
+      </div>
+      <img class="w-[400px]" src="./src/assets/checkout.gif" draggable="false" alt="CHECKOUT">
     </section>
     <script src="./src/index.js"></script>
   </body>
