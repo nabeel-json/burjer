@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-shape-divider-top-1726891569 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1726891569 svg {
+  position: relative;
+  display: block;
+  width: calc(153% + 1.3px);
+  height: 244px;
+}
+
+.custom-shape-divider-top-1726891569 .shape-fill {
+  fill: white;
+}
